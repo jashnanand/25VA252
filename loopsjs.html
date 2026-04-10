@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in js</title>
+</head>
+<body>
+    <script>
+        //javascript provides several types of loops to repeatedly execute a block of code
+        // loop: Used when the number of iterations is known ahead of time. It is a concise way to write a loop, combining initialization, a condition, and an increment/decrement statement in a single line.
+        let studentlist=["vikas","vinay","vivek","sneha","deepak","shiva"];
+        for(let i=0;i<studentlist.length;i++){
+            console.log(studentlist[i]);
+        }
+
+        //while loop: Used when the number of iterations is unknown and depends on a condition that must be true for the loop to continue. The condition is checked before each iteration.
+        let x=0;
+        while(x<studentlist.length){
+            console.log(studentlist[x]);
+            x++;
+        }
+
+        //for...of loop: Iterates over the values of an iterable object (including Array, String, Map, and Set).
+        for(let y of studentlist){
+            console.log(y);
+        }
+
+        let mylist=["name=jashn","age=18","ismarried=false","course=B.TECH","mobile=9899068810"];
+        for(let i=0;i<mylist.length;i++){
+            console.log(mylist[i]);
+        }
+
+        let myinfo={
+            name:"jashn",
+        
+            age:"18",
+            eMail:"jashn73833@gmail.com",
+            mob:"78934734",
+        }
+
+        for(let objkeys in myinfo){
+            console.log(myinfo[objkeys]);
+        }
+       
+        let age=23;
+        if(age>=18){
+            console.log("valid age for voting");
+        }
+
+        let myage=45;
+        if(myage<18){
+            console.log("wait for next year")
+        }
+        else{
+            console.log("you are eligible for voting")
+        }
+
+        let grade="A";
+        switch(grade){
+            case'A':result="first div";
+            break;
+              case'B':result="second div";
+            break;
+              case'C':result="third div";
+            break;
+             default:result="fail";
+
+        }
+        console.log(result);
+
+        let marks=45;
+        if(marks>=60){
+            console.log("first div");
+        }
+        else if(marks<60 && marks>=40){
+            console.log("sec div");
+        }
+        else if(marks<40 && marks>=30){
+            console.log("third div");
+        }
+        else{
+            console.log("fail");
+        }
+  
+        let markings={
+           english:80,
+           maths:70,
+           hindi:80
+        }
+
+        for(i)
+        
+
+    </script>
+</body>
+</html>
