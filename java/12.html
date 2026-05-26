@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>Student Details</h2>
+<p id="demo"></p>
+
+
+<script>
+// JSON text
+let jsonData = '{"name":"ayushi","age":18,"course":"BCA"}';
+
+
+// Convert JSON to object
+let obj = JSON.parse(jsonData);
+
+
+// Populate values document.getElementById("demo").innerHTML = "Name: " + obj.name + "<br>" +
+"Age: " + obj.age + "<br>" + "Course: " + obj.course;
+</script>
+
+
+
+</body>
+</html>
